@@ -1,11 +1,12 @@
 # bcdams
 
-A geojson collection of point features for locations of BC dams, compiled from several data sources by Canadian Wildlife Federation for fish passage modelling.
+A geojson collection of point features for locations of BC dams, manually compiled from several data sources by Canadian Wildlife Federation for fish passage modelling.
 Includes attributes noting if a dam is a hydro power generator and if it is a barrier to fish passage.
 
 ## Method
 
 ### Load data, identify duplicates
+
 - locations of BC Dams Layer were compiled using the seven distinct source datasets noted below
 - features classified as manmade dam structures were included
 - data provided as line (i.e., BC Dams, NHN, and CanVec) or polygon (i.e., NHN and CanVec) features were converted into point features
@@ -20,23 +21,6 @@ Manual QA/QC was performed on the combined features using a [list of BC Hydro fa
 ### Identify fish passage status
 
 Fishway data obtained from the [CanFishPass database](http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/) and BC Hydro was incorporated to identify barriers that employ fish passage measures, and consequently are not considered to be barriers to fish.
-
-### Caveats
-
-Duplicate records still exist within the dataset - further manual QA/QC is required.
-
-
-## Attributes
-
-| column | description  |
-|----------|-------------|
-| `source_dataset` | Name of database used as source for the dam location, see data sources for a full list of possible values |
-| `source_id`      | From source database, value of unique identifier |
-| `dam_name`       | From source database, name of dam  |
-| `waterbody_name` | From source database, name of the lake/reservior/river associated with the dam (type of feature varies according to source) |
-| `owner`          | From source database, name of the owner of the dam (where available) |
-| `hydro_dam_ind` | Indicates whether the dam/structure is associated with a hydro facility (yes = Y; no = N). |
-| `barrier_ind`   | Indicates whether the structure associated with the record acts as a barrier to fish (yes = Y; no = N). Records with a value of ‘N’ are structures that are known to have fish passage measure in place (i.e. Pool and Weir, Pool and Weir with Hole, Vertical Shot, Denil, Trap and Truck, Nature-like fishway) and therefore are not represented in the dataset as a barrier to fish. |
 
 
 ## Spatial data sources
@@ -89,3 +73,18 @@ Duplicate records still exist within the dataset - further manual QA/QC is requi
     For more information:
     [https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6?wbdisable=true](https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6?wbdisable=true)
 
+## Attributes
+
+| column | description  |
+|----------|-------------|
+| `source_dataset` | Name of database used as source for the dam location, see data sources for a full list of possible values |
+| `source_id`      | From source database, value of unique identifier |
+| `dam_name`       | From source database, name of dam  |
+| `waterbody_name` | From source database, name of the lake/reservior/river associated with the dam (type of feature varies according to source) |
+| `owner`          | From source database, name of the owner of the dam (where available) |
+| `hydro_dam_ind` | Indicates whether the dam/structure is associated with a hydro facility (yes = Y; no = N). |
+| `barrier_ind`   | Indicates whether the structure associated with the record acts as a barrier to fish (yes = Y; no = N). Records with a value of ‘N’ are structures that are known to have fish passage measure in place (i.e. Pool and Weir, Pool and Weir with Hole, Vertical Shot, Denil, Trap and Truck, Nature-like fishway) and therefore are not represented in the dataset as a barrier to fish. |
+
+## Caveats
+
+Duplicate records still exist within the dataset - further manual QA/QC is required.
