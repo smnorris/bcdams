@@ -1,6 +1,6 @@
 # BC Dams
 
-A complilation of British Columbia dams from several data sources, with attributes noting whether a dam is a hydro generator and whether it is a barrier to fish passage.
+A Canadian Wildlife Federation complilation of British Columbia dams from several data sources, with attributes noting whether a dam is a hydro generator and whether it is a barrier to fish passage.
 
 ## Method
 
@@ -36,7 +36,6 @@ Duplicate records still exist within the dataset - further manual QA/QC is requi
 | `owner`          | From source database, name of the owner of the dam (where available) |
 | `hydro_dam_ind` | Indicates whether the dam/structure is associated with a hydro facility (yes = Y; no = N). |
 | `barrier_ind`   | Indicates whether the structure associated with the record acts as a barrier to fish (yes = Y; no = N). Records with a value of ‘N’ are structures that are known to have fish passage measure in place (i.e. Pool and Weir, Pool and Weir with Hole, Vertical Shot, Denil, Trap and Truck, Nature-like fishway) and therefore are not represented in the dataset as a barrier to fish. |
-
 
 
 ## Spatial data sources
