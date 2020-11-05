@@ -1,6 +1,7 @@
 # BC Dams
 
-A Canadian Wildlife Federation complilation of British Columbia dams from several data sources, with attributes noting whether a dam is a hydro generator and whether it is a barrier to fish passage.
+Point locations of BC dams, compiled from several data sources by Canadian Wildlife Federation for fish passage modelling.
+Includes attributes noting if a dam is a hydro power generator and if it is a barrier to fish passage.
 
 ## Method
 
