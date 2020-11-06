@@ -1,7 +1,7 @@
 # bcdams
 
 A geojson collection of point features for locations of BC dams, manually compiled from several data sources by Canadian Wildlife Federation for fish passage modelling.
-Includes attributes noting if a dam is a hydro power generator and if it is a barrier to fish passage.
+Includes attributes noting if a dam is a hydro power facility and if it is a barrier to fish passage.
 
 ## Method
 
