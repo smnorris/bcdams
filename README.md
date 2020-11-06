@@ -77,6 +77,7 @@ Fishway data obtained from the [CanFishPass database](http://www.fecpl.ca/projec
 
 | column | description  |
 |----------|-------------|
+| `bcdams_id`      | Unique identifier |
 | `source_dataset` | Name of database used as source for the dam location, see data sources for a full list of possible values |
 | `source_id`      | From source database, value of unique identifier |
 | `dam_name`       | From source database, name of dam  |
