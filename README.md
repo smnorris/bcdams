@@ -1,7 +1,14 @@
 # bcdams
 
+------
+
+*This repository is no longer mainatained. See the [Canadian Aquatic Barriers Database](https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html) for an aggregated collection of dam point locations in BC, or refer to the list of data sources below.*
+
+------
 A geojson collection of point features for locations of BC dams, manually compiled from several data sources by Canadian Wildlife Federation for fish passage modelling.
 Includes attributes noting if a dam is a hydro power facility and if it is a barrier to fish passage.
+
+
 
 ## Method
 
